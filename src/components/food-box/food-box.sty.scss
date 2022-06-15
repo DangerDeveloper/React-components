@@ -1,0 +1,23 @@
+.food-box {
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.food-color-represent {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: aqua;
+}
+
+.food-name {
+    margin-top: 4px;
+    color: #A8A6A6;
+    letter-spacing: 0px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 500;
+    font-family: Segoe UI;
+}
