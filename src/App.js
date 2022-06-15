@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import './App.css';
 import Food from './components/food/food.com';
+import GraphDetailContainer from './components/graph-detail-container/graph-detail-container.com';
 import Main from './components/main/main.com';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       <div className='challenge-box'>
         <Food />
         <Main />
+        <GraphDetailContainer />
       </div>
     </div>
   )

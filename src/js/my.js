@@ -21,7 +21,6 @@ const fake_data = [['Whole Food Drink', 'Smoothie'],
                   ['Frozen Treat'],
                   ['Smoothie'],
                   ['No Activity'],
-                  ['Tea', 'Soup'],
                   ['Smoothie'],
                   ['No Activity'],
                   ['Smoothie', 'Tea'],
@@ -33,6 +32,7 @@ const fake_data = [['Whole Food Drink', 'Smoothie'],
                   ['No Activity'],
                   ['No Activity'],
                   ['No Activity'],
+                  ['Tea', 'Soup'],
                   ['No Activity'],
                   ['No Activity'],
                   ['No Activity'],
@@ -41,20 +41,18 @@ const fake_data = [['Whole Food Drink', 'Smoothie'],
                   ['No Activity'],
                   ];
 
+
 export const daysInMonth = () => {
-  const dt = new Date('23-may-2022');
-  const month = dt.getMonth();
-  const year = dt.getFullYear();
-  const day = dt.getDate();
-  const date = new Date(year, month, day);
+  let dt = new Date('23-may-2022');
+  
   const days = [];
   for (let i=0; i <= 29; i++) {
-    if(date < new Date()) {
-      days.push([date.getDate(), week[date.getDay()], fake_data[i]]);
+    if(dt.getTime() < new Date().getTime()) {
+      days.push([dt, dt.getDate(), week[dt.getDay()], fake_data[i]]);
     } else {
-      days.push([date.getDate(), week[date.getDay()]]);
+      days.push([dt, dt.getDate(), week[dt.getDay()]]);
     }
-    date.setDate(date.getDate() + 1);
+    dt = new Date(dt.getTime() + (1000 * 60 * 60 * 24));
   }
   return days;
 }

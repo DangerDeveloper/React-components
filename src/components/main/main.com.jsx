@@ -4,7 +4,6 @@ import './main.sty.scss';
 import {daysInMonth} from '../../js/my';
 
 function Main() {
-
     return (<div className="main-circle">
             <Inside />
             {daysInMonth()
