@@ -27,8 +27,8 @@ function Main() {
 
     useEffect(() => {
         document.querySelectorAll('.main-circle').forEach(ciclegraph => {
-            let innerCircle = ciclegraph.querySelector('.inside-circle');
-            console.log(innerCircle.clientWidth);
+            // let innerCircle = ciclegraph.querySelector('.inside-circle');
+            // console.log(innerCircle.clientWidth);
             let circles = ciclegraph.querySelectorAll('.single-date');
             let angle = 360-25, dangle = 345 / circles.length;
             for( let i = 0; i < circles.length; ++i ){
@@ -39,11 +39,11 @@ function Main() {
         })
       }, []);
 
+    const dateList =  daysInMonth();
+
     return (<div className="main-circle">
-            <Inside />
-            {daysInMonth()
-            .map((date, key) => <Date key={key} date={date}/>)}
-            
+            <Inside dateList={dateList}/>
+            {dateList.map((date, key) => <Date key={key} date={date}/>)}
         </div>);
 }
 
