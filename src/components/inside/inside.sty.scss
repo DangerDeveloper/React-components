@@ -1,8 +1,8 @@
 .inside-circle {
     background-color: #FFFFFF;
-    width: 21.0687022rem;
-    height: 21.125954rem;
-    border-radius: 9999999px;
+    aspect-ratio: 1 / 1;
+    width: 70%;
+    border-radius: 50%;
     border: 1px solid #EEECEC;
     display: flex;
     flex-direction: column;
@@ -11,31 +11,31 @@
 }
 
 .inside-date {
-    font-size: 1rem;
+    font-size: 3vw;
     color: #B5B5B5;
-    margin-top: 15px;
+    margin-top: 2vw;
 }
 
 .day-challenge {
-    font-size: 2rem;
+    font-size: 5vw;
     color: #B5B5B5;
-    margin-top: 15px;
+    margin-top: 2vw;
 }
 
 .remanning-day {
-    font-size: 1.1rem;
+    font-size: 3vw;
     color: white;
     background: #9AC740;
-    padding: 4px 20px;
+    padding: 4px 2vw;
     border: 1px solid #EFEAEA;
-    border-radius: 25px;
-    margin-top: 15px;
+    border-radius: 4vw;
+    margin-top: 2vw;
 
 }
 
 .remanning-percentage {
-    font-size: 1.2rem;
+    font-size: 3vw;
     color: #92CE5D;
-    margin-top: 20px;
+    margin-top: 2vw;
     letter-spacing: 0px;
 }

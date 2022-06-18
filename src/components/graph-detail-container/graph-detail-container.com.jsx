@@ -29,21 +29,19 @@ function GraphDetailContainer() {
         return obj;
     }, {}));
 
-    // console.log(output);
+    console.log(output);
 
     return <div className='graph-data'>
         <div className='current-streak streak'>
             <p className='no-of-days'>7 Days</p>
-            <p>Current Streak</p>
+            <p className='current-streak-paragraph'>Current Streak</p>
         </div>
         <div className='graph-box'>
-            <div className='graph'>
                 <HSBar height={'100%'} id="new_id" data={output}/>
-            </div>
         </div>
         <div className='longest-streak streak'>
             <p className='no-of-days'>7 Days</p>
-            <p>Longest Streak</p>
+            <p className='longest-streak-paragraph'>Longest Streak</p>
         </div>
     </div>
 }

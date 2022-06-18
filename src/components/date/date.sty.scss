@@ -1,5 +1,5 @@
 .single-date {
-    font-size: .55rem;
+    font-size: 1.1vw;
     background: transparent;
     color: #989898;
     font-weight: 600;
@@ -11,7 +11,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 35px;
-    height: 35px;
+    aspect-ratio: 1 / 1;
+    width: 5vw;
 }
 

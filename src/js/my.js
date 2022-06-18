@@ -1,8 +1,8 @@
 
 
 const week = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
-export const food_color = {'#9AC740': 'Whole Food Drink',
-                            '#FFB440': 'Refreshing Drink',
+export const food_color = {'#9AC740': 'Whole Food',
+                            '#FFB440': 'Refreshing',
                             '#FF5140': 'Smoothie',
                             '#FFE740': 'Soup',
                             '#AF895F': 'Tea',

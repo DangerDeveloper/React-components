@@ -1,7 +1,9 @@
 .main-circle {
     background: #FFFFFF;
-    width: 30rem;
-    height: 30rem;
+    // background-color: aqua;
+    aspect-ratio: 1 / 1;
+    width: 70%;
+    // height: 30rem;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -11,16 +13,3 @@
 
     position: relative;
 }
-
-
-// .main-circle:before {
-//     content: "";
-//     position: absolute;
-//     top: 0; 
-//     left: 0;
-
-//     border: 1px solid teal;
-//     width: calc( 100%);
-//     height: calc( 100%);
-//     border-radius: 50%;
-// }
