@@ -7,7 +7,7 @@ function Date({date}) {
         col = date[3].map(value => Object.keys(food_color).find(key => food_color[key] === value));
     }
     // console.log(col);
-    return <div className='single-date' 
+    return <div className='challenge-circle-single-date' 
             style={{background: col[0] === 'transparent' ? 'transparent' :
                              col.length === 1 ? col[0] :
                              col.length === 2 ? `linear-gradient(to left, ${col[0]} 50%, ${col[1]} 50%)` :

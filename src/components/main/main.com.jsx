@@ -26,24 +26,37 @@ function Main() {
     //   }, []);
 
     useEffect(() => {
-        document.querySelectorAll('.main-circle').forEach(ciclegraph => {
-            // let innerCircle = ciclegraph.querySelector('.inside-circle');
+        document.querySelectorAll('.challenge-circle-main-circle').forEach(ciclegraph => {
+            // let innerCircle = ciclegraph.querySelector('.challenge-circle-inside-circle');
             // console.log(innerCircle.clientWidth);
-            let circles = ciclegraph.querySelectorAll('.single-date');
-            let angle = 360-25, dangle = 345 / circles.length;
+            let circles = ciclegraph.querySelectorAll('.challenge-circle-single-date');
+            let semiCircle = ciclegraph.querySelector('.semi-circle');
+            circles = [...circles, semiCircle];
+            // console.log(circles);
+            let angle = 360-25, dangle = 355 / circles.length;
+            let circle;
             for( let i = 0; i < circles.length; ++i ){
-                let circle = circles[i];
+                circle = circles[i];
                 angle += dangle;
-                circle.style.transform = `rotate(${angle}deg) translate(30.5vw) rotate(-${angle}deg)`
+                circle.style.transform = `rotate(${angle}deg) translate(30vw) rotate(-${angle}deg)`; 
             }
+            circle.style.transform = `rotate(${angle}deg) translate(30vw) rotate(-${angle - 145}deg)`;
         })
       }, []);
 
     const dateList =  daysInMonth();
+    const afterAddingDateList = [...dateList, []];
 
-    return (<div className="main-circle">
+    // console.log(afterAddingDateList[-1]);
+    return (<div className="challenge-circle-main-circle">
             <Inside dateList={dateList}/>
-            {dateList.map((date, key) => <Date key={key} date={date}/>)}
+            {afterAddingDateList.map((date, key) => {
+                if(!date[0]) {
+                    return <div key={key} className="semi-circle">
+                    </div>
+                }
+                return <Date key={key} date={date}/>
+            })}
         </div>);
 }
 

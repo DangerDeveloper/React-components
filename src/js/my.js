@@ -64,7 +64,6 @@ export const daysInMonth = () => {
   const days = [];  
 
   if(dt_check.getTime() <= today.getTime()) {
-    console.log('Hello');
 
     for (let i=0; dt.getTime() <= new Date(today.getTime() + (1000 * 60 * 60 * 24 * 1)); i++) {
       if(dt.getTime() <= today.getTime()) {

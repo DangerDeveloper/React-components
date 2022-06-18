@@ -1,7 +1,7 @@
 import './profile.sty.scss';
 
 function Profile() {
-    return <div className='profile'>
+    return <div className='challenge-circle-profile'>
 
     </div>
 }

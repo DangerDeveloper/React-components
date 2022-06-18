@@ -13,17 +13,14 @@ function Inside({dateList}) {
         }
         return totalCount += 0;
     }, 0);
-
-    // console.log(100 * remaningDays / 30);
     const remaningPercentage = Math.round((remaningDays / 30) * 100);
-    // console.log(remaningPercentage);
 
-    return <div className="inside-circle">
+    return <div className="challenge-circle-inside-circle">
         <Profile />
-        <div className='inside-date'>{week[dt.getDay()]}, {year[dt.getMonth()]} {dt.getDate()}</div>
-        <p className='day-challenge'> 30 Day Challenge</p>
-        <span className='remanning-day'>{remaningDays} Day Remaining</span>
-        <p className='remanning-percentage'>Keep it Going {remaningPercentage}%</p>
+        <div className='challenge-circle-inside-date'>{week[dt.getDay()]}, {year[dt.getMonth()]} {dt.getDate()}</div>
+        <p className='challenge-circle-day-challenge'> 30 Day Challenge</p>
+        <span className='challenge-circle-remanning-day'>{remaningDays} Day Remaining</span>
+        <p className='challenge-circle-remanning-percentage'>Keep it Going {remaningPercentage}%</p>
     </div>
 }
 

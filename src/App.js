@@ -6,7 +6,7 @@ import Main from './components/main/main.com';
 function App() {
   return (
     <div className="App">
-      <div className='challenge-box'>
+      <div className='challenge-circle-box'>
         <Food />
         <Main />
         <GraphDetailContainer />

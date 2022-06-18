@@ -1,7 +1,7 @@
 import { daysInMonth, food_color } from '../../js/my';
 import './graph-detail-container.sty.scss';
-// import HSBar from "react-horizontal-stacked-bar-chart";
-import Highcharts from 'highcharts';
+import HSBar from "react-horizontal-stacked-bar-chart";
+// import Highcharts from 'highcharts';
 import { useEffect } from 'react';
 
 function GraphDetailContainer() {
@@ -31,92 +31,77 @@ function GraphDetailContainer() {
         return obj;
     }, {}));
 
-    // console.log(output);
-    // console.log(output.map(co => {
-    //     console.log(co['color'])
-    //     return co['color'];
-    // }));
-
-    // console.log(output.map(co => {
-    //     console.log(co);
-    //     return {
-    //         showInLegend: false,
-    //         name: co['description'],
-    //         data: [co['value']],
-    //       };
-    // }))
-
-    useEffect(() => {
-        Highcharts.chart('container', {
-            credits: {
-              enabled: false
-            },
-            colors: output.map(co => co['color']),
-            plotOptions: {
-                series: {
-                    stacking: 'normal'
-                },
-                column: {
-                colorByPoint: true
-                    }
-            },
-            chart: {
-                type: 'bar',
-                spacing: [0, 0, 0, 0],
-                backgroundColor: null,
-                marginTop:0,
-                marginBottom:0,
+    // useEffect(() => {
+    //     Highcharts.chart('challenge-circle-container', {
+    //         credits: {
+    //           enabled: false
+    //         },
+    //         colors: output.map(co => co['color']),
+    //         plotOptions: {
+    //             series: {
+    //                 stacking: 'normal'
+    //             },
+    //             column: {
+    //             colorByPoint: true
+    //                 }
+    //         },
+    //         chart: {
+    //             type: 'bar',
+    //             spacing: [0, 0, 0, 0],
+    //             backgroundColor: null,
+    //             marginTop:0,
+    //             marginBottom:0,
             
-            },
-            title: {
-              text: ''
-            },
-            xAxis: {
-              startOnTick: false,
-              labels: {
-                enabled: false
-              },
-              categories: [''],
-              lineWidth: 0,
-              tickWidth: 0,
-              labels: {
-                enabled: false
-              }
-            },
-            yAxis: {
-              minPadding: 0,
-              maxPadding: 0,
-              labels: {
-                enabled: false
-              },
-              gridLineWidth: 0,
-              title: null,
-            },
-            series: output.map((co, _, fco) => {
-                // console.log(co);
-                return {
-                    showInLegend: false,
-                    name: co['description'],
-                    data: [((co['value'] / fco.map(a => a['value']).reduce((a, b) => a + b, 0)) * 100)],
-                  };
-            }),
-        });
-    }, []);
+    //         },
+    //         title: {
+    //           text: ''
+    //         },
+    //         xAxis: {
+    //           startOnTick: false,
+    //           labels: {
+    //             enabled: false
+    //           },
+    //           categories: [''],
+    //           lineWidth: 0,
+    //           tickWidth: 0,
+    //           labels: {
+    //             enabled: false
+    //           }
+    //         },
+    //         yAxis: {
+    //           minPadding: 0,
+    //           maxPadding: 0,
+    //           labels: {
+    //             enabled: false
+    //           },
+    //           gridLineWidth: 0,
+    //           title: null,
+    //         },
+    //         series: output.map((co, _, fco) => {
+    //             // console.log(co);
+    //             return {
+    //                 showInLegend: false,
+    //                 name: co['description'],
+    //                 data: [((co['value'] / fco.map(a => a['value']).reduce((a, b) => a + b, 0)) * 100)],
+    //               };
+    //         }),
+    //     });
+    // }, []);
 
     
 
-    return <div className='graph-data'>
-        <div className='current-streak streak'>
-            <p className='no-of-days'>7 Days</p>
-            <p className='current-streak-paragraph'>Current Streak</p>
+    return <div className='challenge-circle-graph-data'>
+        <div className='challenge-circle-current-streak streak'>
+            <p className='challenge-circle-no-of-days'>7 Days</p>
+            <p className='challenge-circle-current-streak-paragraph'>Current Streak</p>
         </div>
-        <div className='graph-box'>
-                {/* <HSBar height={'100%'} id="new_id" data={output}/> */}
-                <div id="container"></div>
+        <div className='challenge-circle-graph-box'>
+                <HSBar height={'100%'} id="challenge-circle-new_id" data={output}/>
+                {/* <div id="challenge-circle-container"></div> */}
         </div>
-        <div className='longest-streak streak'>
-            <p className='no-of-days'>7 Days</p>
-            <p className='longest-streak-paragraph'>Longest Streak</p>
+        <div className='challenge-circle-longest-streak streak'>
+            <p className='challenge-circle-no-of-days'>7 Days</p>
+            <p className='challenge-circle-longest-streak-paragraph'>Longest Streak</p>
         </div>
     </div>
 }
