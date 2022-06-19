@@ -20,7 +20,7 @@ function Main() {
                     angle += dangle;
                     circle.style.transform = `rotate(${angle}deg) translate(${ciclegraph.clientWidth / 2}px) rotate(-${angle}deg)`
                 }
-                circle.style.transform = `rotate(${angle - 2}deg) translate(${ciclegraph.clientWidth / 2}px) rotate(-${angle - 149}deg)`
+                circle.style.transform = `rotate(${angle - 2}deg) translate(${ciclegraph.clientWidth / 2}px) rotate(-${angle - 150}deg)`
             })
 
             let outerCircle = document.querySelector('.challenge-circle-main-circle-outer');
