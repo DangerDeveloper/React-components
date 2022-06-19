@@ -54,18 +54,15 @@ export const daysInMonth = () => {
   let dt = new Date('21-may-2022');
   let dt_check = new Date('21-may-2022');
   let today = new Date();
-  // let newDT = new Date('23-jun-2022');
 
   dt_check = new Date(dt_check.getTime() + (1000 * 60 * 60 * 24 * 29));
-
-  // newDT = new Date(newDT.getTime() + (1000 * 60 * 60 * 24 * 1));
-  // newDT = new Date(newDT.getTime() - (1000 * 60 * 60 * 24 * 30));
   
   const days = [];  
 
   if(dt_check.getTime() <= today.getTime()) {
 
     for (let i=0; dt.getTime() <= new Date(today.getTime() + (1000 * 60 * 60 * 24 * 1)); i++) {
+      
       if(dt.getTime() <= today.getTime()) {
         days.push([dt, dt.getDate(), week[dt.getDay()], fake_data[i]]);
       } else {
@@ -77,6 +74,7 @@ export const daysInMonth = () => {
       return days.slice(-30);
   } else {
     for (let i=0; i <= 29; i++) {
+
       if(dt.getTime() <= today.getTime()) {
         days.push([dt, dt.getDate(), week[dt.getDay()], fake_data[i]]);
       } else {
@@ -87,35 +85,4 @@ export const daysInMonth = () => {
     
     return days;
   }
-
-
-
-
-  // for (let i=0; i <= 29; i++) {
-  //   if(dt_check.getTime() < today.getTime()) {
-  //     console.log('Hello');
-
-
-
-  //   if(newDT.getTime() < today.getTime()) {
-  //     days.push([newDT, newDT.getDate(), week[newDT.getDay()], fake_data[i]]);
-  //   } else {
-  //     days.push([newDT, newDT.getDate(), week[newDT.getDay()]]);
-  //   }
-  //   newDT = new Date(newDT.getTime() + (1000 * 60 * 60 * 24));
-
-
-
-  //   } else {
-  //     if(dt.getTime() < today.getTime()) {
-  //     days.push([dt, dt.getDate(), week[dt.getDay()], fake_data[i]]);
-  //   } else {
-  //     days.push([dt, dt.getDate(), week[dt.getDay()]]);
-  //   }
-  //   dt = new Date(dt.getTime() + (1000 * 60 * 60 * 24));
-  // }
-  // }
-
-
-  // return days;
 }

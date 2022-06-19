@@ -2,7 +2,6 @@ import { daysInMonth, food_color } from '../../js/my';
 import './graph-detail-container.sty.scss';
 import HSBar from "react-horizontal-stacked-bar-chart";
 // import Highcharts from 'highcharts';
-import { useEffect } from 'react';
 
 function GraphDetailContainer() {
     let date = new Date();
@@ -91,7 +90,7 @@ function GraphDetailContainer() {
     
 
     return <div className='challenge-circle-graph-data'>
-        <div className='challenge-circle-current-streak streak'>
+        <div className='challenge-circle-current-streak challenge-circle-streak'>
             <p className='challenge-circle-no-of-days'>7 Days</p>
             <p className='challenge-circle-current-streak-paragraph'>Current Streak</p>
         </div>
@@ -99,7 +98,7 @@ function GraphDetailContainer() {
                 <HSBar height={'100%'} id="challenge-circle-new_id" data={output}/>
                 {/* <div id="challenge-circle-container"></div> */}
         </div>
-        <div className='challenge-circle-longest-streak streak'>
+        <div className='challenge-circle-longest-streak challenge-circle-streak'>
             <p className='challenge-circle-no-of-days'>7 Days</p>
             <p className='challenge-circle-longest-streak-paragraph'>Longest Streak</p>
         </div>

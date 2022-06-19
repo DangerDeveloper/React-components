@@ -6,7 +6,6 @@ function Date({date}) {
     if(date[3]) {
         col = date[3].map(value => Object.keys(food_color).find(key => food_color[key] === value));
     }
-    // console.log(col);
     return <div className='challenge-circle-single-date' 
             style={{background: col[0] === 'transparent' ? 'transparent' :
                              col.length === 1 ? col[0] :
