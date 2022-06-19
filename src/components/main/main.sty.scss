@@ -1,8 +1,8 @@
-.challenge-circle-main-circle {
+.challenge-circle-main-circle-outer {
     background: #FFFFFF;
     // background-color: aqua;
     aspect-ratio: 1 / 1;
-    width: 70%;
+    width: 70%; // 100
     // height: 30rem;
     border-radius: 50%;
     display: flex;
@@ -14,15 +14,27 @@
     position: relative;
 }
 
+.challenge-circle-main-circle {
 
-.semi-circle {
-// width: 11vw;
-// overflow: hidden;
-// background-color: aqua;
-// position: absolute;
-// border-radius: 50% 50% 0 0 / 100% 100% 0 0;
-// border: 3px solid #000;
-// border-bottom: 0;
-// aspect-ratio: 1.3 / 1;
+    // background-color: aqua;
+    aspect-ratio: 1 / 1;
+    width: 85%;
+    // height: 30rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+
+.challenge-circle-semi-circle {
+position: absolute;
+
+border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+border: 1px solid #EEEEEE;
+border-bottom: 0;
+aspect-ratio: 1.8 / 1;
 }
 
