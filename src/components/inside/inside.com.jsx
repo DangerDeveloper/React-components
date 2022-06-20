@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import Profile from '../profile/profile.com';
 import './inside.sty.scss'
 

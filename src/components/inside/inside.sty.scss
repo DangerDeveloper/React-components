@@ -1,7 +1,7 @@
 .challenge-circle-inside-circle {
     background-color: #FFFFFF;
     aspect-ratio: 1 / 1;
-    width: 90%;
+    // width: 90%;
     border-radius: 50%;
     border: 1px solid #EEECEC;
     display: flex;
@@ -11,31 +11,31 @@
 }
 
 .challenge-circle-inside-date {
-    font-size: 3vw;
+    // font-size: 3vw;
     color: #B5B5B5;
-    margin-top: 2vw;
+    margin-top: 5px;
 }
 
 .challenge-circle-day-challenge {
-    font-size: 5vw;
+    // font-size: 5vw;
     color: #B5B5B5;
-    margin-top: 2vw;
+    margin-top: 5px;
 }
 
 .challenge-circle-remaining-day {
-    font-size: 3vw;
+    // font-size: 3vw;
     color: white;
     background: #9AC740;
-    padding: 4px 2vw;
+    padding: 4px 0;
     border: 1px solid #EFEAEA;
-    border-radius: 4vw;
-    margin-top: 2vw;
+    // border-radius: 4vw;
+    margin-top: 5px;
 
 }
 
 .challenge-circle-remaining-percentage {
-    font-size: 3vw;
+    // font-size: 3vw;
     color: #92CE5D;
-    margin-top: 2vw;
+    margin-top: 4px;
     letter-spacing: 0px;
 }

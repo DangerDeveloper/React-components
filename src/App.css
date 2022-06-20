@@ -5,7 +5,7 @@
 }
 
 .App {
-    background-color: rgb(185, 190, 190);
+    background-color: rgb(5, 104, 104);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -14,7 +14,7 @@
 
 .challenge-circle-box {
     background-color: #FFFFFF;
-    width: 100%;
+    width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;

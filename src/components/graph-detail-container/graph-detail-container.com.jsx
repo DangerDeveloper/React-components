@@ -92,7 +92,7 @@ function GraphDetailContainer() {
     return <div className='challenge-circle-graph-data'>
         <div className='challenge-circle-current-streak challenge-circle-streak'>
             <p className='challenge-circle-no-of-days'>7 Days</p>
-            <p className='challenge-circle-current-streak-paragraph'>Current Streak</p>
+            <p className='challenge-circle-paragraph'>Current Streak</p>
         </div>
         <div className='challenge-circle-graph-box'>
                 <HSBar height={'100%'} id="challenge-circle-new_id" data={output}/>
@@ -100,7 +100,7 @@ function GraphDetailContainer() {
         </div>
         <div className='challenge-circle-longest-streak challenge-circle-streak'>
             <p className='challenge-circle-no-of-days'>7 Days</p>
-            <p className='challenge-circle-longest-streak-paragraph'>Longest Streak</p>
+            <p className='challenge-circle-paragraph'>Longest Streak</p>
         </div>
     </div>
 }

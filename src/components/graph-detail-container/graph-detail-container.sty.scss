@@ -1,7 +1,7 @@
 .challenge-circle-graph-data {
     // background-color: aqua;
     margin-top: 1.5rem;
-    width: 70%;
+    // width: 70%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,35 +17,29 @@
 }
 
 .challenge-circle-no-of-days {
-    font-size: 2.8vw;
+    // font-size: 2.8vw;
     padding-bottom: 6px;
 }
 
-.challenge-circle-current-streak-paragraph,
-.challenge-circle-longest-streak-paragraph {
-    font-size: 1.9vw;
-}
-
 .challenge-circle-graph-box {
-    background: rgb(43, 43, 40);
+    // background: rgb(43, 43, 40);
     flex: 1;
     margin: 0 1rem;
-    height: 4vw;
+    // height: 4vw;
     border-radius: 999999px;
-}
-
-
-#challenge-circle-container {
-    height: 100%;
-    width: 100%;
-    border-radius: 999999px;
-}
-
-.challenge-circle-highcharts-legend-box {
-    width: 0;
-    height: 0;
 }
 
 #challenge-circle-new_id {
     border-radius: 999999px;
 }
+
+// #challenge-circle-container {
+//     height: 100%;
+//     width: 100%;
+//     border-radius: 999999px;
+// }
+
+// .challenge-circle-highcharts-legend-box {
+//     width: 0;
+//     height: 0;
+// }
